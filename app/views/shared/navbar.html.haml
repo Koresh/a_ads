@@ -1,0 +1,59 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.brand{href: "#"}
+        = image_tag "logo.png"
+
+      .divider-vertical.pull-left
+      %ul.nav
+        %li.active
+          = link_to "Advertise", "#"
+        %li
+          = link_to "Earn", "#"
+        %li
+          = link_to "Stats", "#"
+        %li
+          = link_to "FAQ", "#"
+        %li.dropdown
+          %a#locale-switcher.dropdown-toggle{href: "#", data: {toggle: "dropdown"}}
+            %i.icon-flag-usa
+            %b.caret
+
+          %ul.dropdown-menu{role: "menu", aria: {labelledby: "locale-switcher"}}
+            %li.active
+              %a{href: "#"}
+                %i.icon-flag-usa
+                English
+            %li
+              %a{href: "#"}
+                %i.icon-flag-rus
+                Русский
+
+      .divider-vertical.pull-left
+
+      .nav-cart-block.pull-left
+        %i.icon-cart
+        = link_to "Select ad and traffic sources", "#"
+
+      .divider-vertical.pull-right
+
+      .pull-right
+        / AddThis Button BEGIN
+        %div.addthis_toolbox.addthis_floating_style.addthis_counter_style{style: "background: transparent; position: relative; margin: 0; padding: 6px 0 0 0"}
+          %a.addthis_counter
+        :javascript
+          var addthis_config = {"data_track_addressbar":true};
+
+        %script{type: "text/javascript", src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523db23b09da1790"}
+        / AddThis Button END
+
+      .divider-vertical.pull-right
+
+      %form.navbar-search.pull-right.form-search
+        .input-append
+          %input.search-query.span2{type:"text", placeholder:"Search"}
+          %button.btn{type:"submit"}
+            %i.icon-search
+
+      .divider-vertical.pull-right
+
