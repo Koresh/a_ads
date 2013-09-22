@@ -26,7 +26,7 @@
         %li
           %ul.inline
             %li.count
-              0.23121232
+              0.23
             %li
               %div
                 B/day from 3 campaigns
@@ -34,7 +34,7 @@
                 %i.icon-arrow-fall
                 4.2%
   .container
-    .row
+    .row-fluid
       .span5
         %ul#welcome-banner-tabs.nav.nav-tabs
           %li.active
@@ -50,17 +50,17 @@
                   %label.control-label{for: "inputTitle"}
                     Title
                   .controls
-                    %input#inputTitle.span4{type: "text", placeholder: "Type your title here"}
+                    %input#inputTitle.span11{type: "text", placeholder: "Type your title here"}
                 .control-group
                   %label.control-label{for: "inputText"}
                     Text
                   .controls
-                    %input#inputText.span4{type: "text", placeholder: "Example ad text here. Ad text here."}
+                    %input#inputText.span11{type: "text", placeholder: "Example ad text here. Ad text here."}
                 .control-group
                   %label.control-label{for: "inputLink"}
                     Link
                   .controls
-                    %input#inputLink.span4{type: "text", placeholder: "http://yoursite.com"}
+                    %input#inputLink.span11{type: "text", placeholder: "http://yoursite.com"}
                 .control-group
                   .controls
                     %button.btn.btn-primary{type:"submit"} Create Ad
@@ -72,14 +72,14 @@
                   %label.control-label{for: "selectType"}
                     Type
                   .controls
-                    %select#selectType.span4
+                    %select#selectType.span11
                       %option Site
                       %option Another
                 .control-group
                   %label.control-label{for: "inputLink"}
                     Link
                   .controls
-                    %input#inputLink.span4{type: "text", placeholder: "Example ad text here. Ad text here."}
+                    %input#inputLink.span11{type: "text", placeholder: "Example ad text here. Ad text here."}
                 .control-group
                   .controls
                     %button.btn.btn-primary{type:"submit"} Create Ad
@@ -90,44 +90,29 @@
             %li.active{data: {target: "#myCarousel", slide: {to: "0"}}}
             %li{data: {target: "#myCarousel", slide: {to: "1"}}}
             %li{data: {target: "#myCarousel", slide: {to: "2"}}}
+            %li{data: {target: "#myCarousel", slide: {to: "3"}}}
+            %li{data: {target: "#myCarousel", slide: {to: "4"}}}
+            %li{data: {target: "#myCarousel", slide: {to: "5"}}}
 
           .carousel-inner
             .item.active
-              .row
-                .span4
-                  %h2 WHAT IS ANONYMOUS ADS
-                  %p
-                    Ad network without collecting facts about users.
-                  %p
-                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
-                .span3.image-block
-                  = image_tag "banner-slides/banner-slide-1.png"
+              = image_tag "banner-slides/index_eng0.png"
             .item
-              .row
-                .span4
-                  %h2 WHAT IS ANONYMOUS ADS
-                  %p
-                    Ad network without collecting facts about users.
-                  %p
-                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
-                .span3.image-block
-                  = image_tag "banner-slides/banner-slide-1.png"
+              = image_tag "banner-slides/index_eng1.png"
             .item
-              .row
-                .span4
-                  %h2 WHAT IS ANONYMOUS ADS
-                  %p
-                    Ad network without collecting facts about users.
-                  %p
-                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
-                .span3.image-block
-                  = image_tag "banner-slides/banner-slide-1.png"
+              = image_tag "banner-slides/index_eng2.png"
+            .item
+              = image_tag "banner-slides/index_eng3.png"
+            .item
+              = image_tag "banner-slides/index_eng4.png"
+            .item
+              = image_tag "banner-slides/index_eng5.png"
         
 
 
 %section.welcome-news-section
   .container
-    .row
+    .row-fluid
       .span5
         %h2 Our twitter
         %ul.unstyled.last-twitts-list
@@ -183,34 +168,34 @@
       .span7
         %h2 Last news
         %ul.unstyled.last-news-list
-          %li.row
-            .span1
+          %li.row-fluid
+            .span2
               Wed 13:30
-            .span6
+            .span10
               %p
                 = link_to "Will get all the required support and attention get all the required support and attention.", "#"
-          %li.row
-            .span1
+          %li.row-fluid
+            .span2
               Tue 11:30
-            .span6
+            .span10
               %p
                 = link_to "Get all the required and attention support.", "#"
-          %li.row
-            .span1
+          %li.row-fluid
+            .span2
               Wed 13:30
-            .span6
+            .span10
               %p
                 = link_to "A time lapse video tribute to London, made during my final days studying abroad in that lovely city made during my final days studying abroad in that lovely city.", "#"
-          %li.row
-            .span1
+          %li.row-fluid
+            .span2
               Wed 13:30
-            .span6
+            .span10
               %p
                 = link_to "Will get all the required support and attention get all the required support and attention.", "#"
-          %li.row
-            .span1
+          %li.row-fluid
+            .span2
               Tue 11:30
-            .span6
+            .span10
               %p
                 = link_to "Get all the required and attention support.", "#"
 

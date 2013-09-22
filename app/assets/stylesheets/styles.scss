@@ -10,9 +10,10 @@ body{
   padding-top: $navbarHeight;
 }
 
+@import "scaffolding";
 
 // Include responsive Bootstrap styles
-@import "bootstrap-responsive";
+// @import "bootstrap-responsive";
 
 @import "type";
 
