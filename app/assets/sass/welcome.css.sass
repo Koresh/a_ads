@@ -42,12 +42,6 @@ $welcome-form-label-width: 60px
               font-size: 32px
               +text-shadow(0 2px 2px rgba(0,0,0,.75))
 
-            .rise
-              color: $green
-
-            .fall
-              color: $red
-
   .nav-tabs
     margin:
       bottom: 0
@@ -60,6 +54,9 @@ $welcome-form-label-width: 60px
       > a
         background: $white
         font-size: 22px
+        padding: 15px 20px
+        margin:
+          right: 4px
 
         &:hover
           border:
@@ -148,4 +145,49 @@ $welcome-form-label-width: 60px
           +border-radius(999px)
           +background-image(linear-gradient(#00b5fc, #004a7d))
           +box-shadow(inset 0px 2px 0 0 #349fd6)
+
+.welcome-news-section
+  padding: 10px 0
+
+.last-news-list
+  font-size: 12px
+
+
+  > li
+    .span6
+      margin:
+        left: 5px
+
+    p
+      line-height: 16px
+
+    a
+      text-decoration: underline
+
+.last-twitts-list
+  font-size: 12px
+
+  > li
+    border-bottom:
+      width: 1px
+      style: solid
+      color: #dfdfdf
+    padding:
+      bottom: 2px
+    margin:
+      bottom: 12px
+
+    &:last-child
+      border: 0
+
+    p
+      margin:
+        bottom: 5px
+      line-height: 14px
+
+    .actions
+      font-size: 10px
+
+    a
+      text-decoration: underline
 
