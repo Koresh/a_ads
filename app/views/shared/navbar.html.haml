@@ -35,9 +35,17 @@
         %i.icon-cart
         = link_to "Select ad and traffic sources", "#"
 
-      .divider-vertical.pull-right
+      .divider-vertical.pull-left
 
-      .pull-right
+      %form.navbar-search.pull-left.form-search
+        .input-append
+          %input.search-query.span2{type:"text", placeholder:"Search"}
+          %button.btn{type:"submit"}
+            %i.icon-search
+
+      .divider-vertical.pull-left
+
+      .pull-left
         / AddThis Button BEGIN
         %div.addthis_toolbox.addthis_floating_style.addthis_counter_style{style: "background: transparent; position: relative; margin: 0; padding: 6px 0 0 0"}
           %a.addthis_counter
@@ -46,14 +54,3 @@
 
         %script{type: "text/javascript", src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523db23b09da1790"}
         / AddThis Button END
-
-      .divider-vertical.pull-right
-
-      %form.navbar-search.pull-right.form-search
-        .input-append
-          %input.search-query.span2{type:"text", placeholder:"Search"}
-          %button.btn{type:"submit"}
-            %i.icon-search
-
-      .divider-vertical.pull-right
-
