@@ -85,9 +85,47 @@
                     %button.btn.btn-primary{type:"submit"} Create Ad
 
       .span7
-        Slider
+        #myCarousel.carousel.slide
+          %ol.carousel-indicators
+            %li.active{data: {target: "#myCarousel", slide: {to: "0"}}}
+            %li{data: {target: "#myCarousel", slide: {to: "1"}}}
+            %li{data: {target: "#myCarousel", slide: {to: "2"}}}
+
+          .carousel-inner
+            .item.active
+              .row
+                .span4
+                  %h2 WHAT IS ANONYMOUS ADS
+                  %p
+                    Ad network without collecting facts about users.
+                  %p
+                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
+                .span3.image-block
+                  = image_tag "banner-slides/banner-slide-1.png"
+            .item
+              .row
+                .span4
+                  %h2 WHAT IS ANONYMOUS ADS
+                  %p
+                    Ad network without collecting facts about users.
+                  %p
+                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
+                .span3.image-block
+                  = image_tag "banner-slides/banner-slide-1.png"
+            .item
+              .row
+                .span4
+                  %h2 WHAT IS ANONYMOUS ADS
+                  %p
+                    Ad network without collecting facts about users.
+                  %p
+                    You are good for us regardless of the quantity and quality of your traffic. Any rates of CPM and CPC. Advertiser gives you the budget plus rewards for effective traffic. Pre-moderation of all ads, automatic withdrawal Ƀ, direct advertising sales from your site.
+                .span3.image-block
+                  = image_tag "banner-slides/banner-slide-1.png"
+        
 
 
 %section
   .container
     INDEX
+
