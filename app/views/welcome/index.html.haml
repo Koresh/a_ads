@@ -1,7 +1,89 @@
 %section.welcome-banner-section
+  %header.welcome-banner-header
+    .container
+      %ul.inline
+        %li
+          %ul.inline
+            %li.count
+              268 123
+            %li
+              %div
+                impressions/day from 12K+ unique IPs
+              .rise
+                %i.icon-arrow-rise
+                15.17%
+        %li
+          %ul.inline
+            %li.count
+              15 673
+            %li
+              %div
+                clicks/day from 1.1K unique IPs
+              .rise
+                %i.icon-arrow-rise
+                5.7%
+
+        %li
+          %ul.inline
+            %li.count
+              0.23121232
+            %li
+              %div
+                B/day from 3 campaigns
+              .fall
+                %i.icon-arrow-fall
+                4.2%
   .container
     .row
       .span5
+        %ul#welcome-banner-tabs.nav.nav-tabs
+          %li.active
+            %a{href: "#add-place"} Place your ad
+          %li
+            %a{href: "#profile"} Earn money
+         
+        .tab-content
+          #add-place.tab-pane.active
+            %form.form-horizontal
+              %fieldset
+                .control-group
+                  %label.control-label{for: "inputTitle"}
+                    Title
+                  .controls
+                    %input#inputTitle.span4{type: "text", placeholder: "Type your title here"}
+                .control-group
+                  %label.control-label{for: "inputText"}
+                    Text
+                  .controls
+                    %input#inputText.span4{type: "text", placeholder: "Example ad text here. Ad text here."}
+                .control-group
+                  %label.control-label{for: "inputLink"}
+                    Link
+                  .controls
+                    %input#inputLink.span4{type: "text", placeholder: "http://yoursite.com"}
+                .control-group
+                  .controls
+                    %button.btn.btn-primary{type:"submit"} Create Ad
+
+          #profile.tab-pane
+            %form.form-horizontal
+              %fieldset
+                .control-group
+                  %label.control-label{for: "selectType"}
+                    Type
+                  .controls
+                    %select#selectType.span4
+                      %option Site
+                      %option Another
+                .control-group
+                  %label.control-label{for: "inputLink"}
+                    Link
+                  .controls
+                    %input#inputLink.span4{type: "text", placeholder: "Example ad text here. Ad text here."}
+                .control-group
+                  .controls
+                    %button.btn.btn-primary{type:"submit"} Create Ad
+
       .span7
         Slider
 

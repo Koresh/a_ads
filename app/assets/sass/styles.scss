@@ -4,6 +4,8 @@
 // I gather this file is a starting point for the project.
 @import "bootstrap";
 
+@import "compass";
+
 body{
   padding-top: $navbarHeight;
 }
@@ -12,6 +14,12 @@ body{
 // Include responsive Bootstrap styles
 @import "bootstrap-responsive";
 
+@import "type";
+
+@import "buttons";
+
 @import "icons";
 
 @import "navbar";
+
+@import "welcome"
