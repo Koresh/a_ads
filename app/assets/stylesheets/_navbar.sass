@@ -2,8 +2,29 @@ $divider-margins: 10px
 $cart-block-padding: 10px
 
 .navbar
+  .navbar-row
+    display: table-row
+    .navbar-cell
+      display: table-cell
+      vertical-align: top
+      &.navbar-cell-nowrap
+        white-space: nowrap
+  .nav
+    float: none
+    margin: 0
+    li
+      float: none
+      +inline-block
+    .dropdown-menu
+      li
+        display: block
+        float: left
+        width: 100%
+
   .brand
-    padding: 15px 16px
+    padding: 15px 10px 15px 0
+    margin: 0
+    width: 129px
 
   .divider-vertical
     height: $navbarHeight - $divider-margins
@@ -11,10 +32,6 @@ $cart-block-padding: 10px
       top: $divider-margins / 2
     border: 
       color: transparent rgba(255,255,255, .6) transparent rgba(0,0,0, .1)
-
-  .nav
-    margin:
-      right: 0
 
   .addthis_floating_style.addthis_counter_style
     &, .addthis_internal_container

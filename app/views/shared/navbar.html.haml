@@ -1,56 +1,58 @@
 .navbar.navbar-fixed-top
   .navbar-inner
     .container
-      %a.brand{href: "#"}
-        = image_tag "logo.png"
-
-      .divider-vertical.pull-left
-      %ul.nav
-        %li.active
-          = link_to "Advertise", "#"
-        %li
-          = link_to "Earn", "#"
-        %li
-          = link_to "Stats", "#"
-        %li
-          = link_to "FAQ", "#"
-        %li.dropdown
-          %a#locale-switcher.dropdown-toggle{href: "#", data: {toggle: "dropdown"}}
-            %i.icon-flag-usa
-            %b.caret
-
-          %ul.dropdown-menu{role: "menu", aria: {labelledby: "locale-switcher"}}
+      .navbar-row
+        .navbar-cell
+          %a.brand{href: "#"}
+            = image_tag "logo.png"
+        .navbar-cell
+          .divider-vertical
+        .navbar-cell.navbar-cell-nowrap
+          %ul.nav
             %li.active
-              %a{href: "#"}
-                %i.icon-flag-usa
-                English
+              = link_to "Advertise", "#"
             %li
-              %a{href: "#"}
-                %i.icon-flag-rus
-                Русский
+              = link_to "Earn", "#"
+            %li
+              = link_to "Stats", "#"
+            %li
+              = link_to "FAQ", "#"
+            %li.dropdown
+              %a#locale-switcher.dropdown-toggle{href: "#", data: {toggle: "dropdown"}}
+                %i.icon-flag-usa
+                %b.caret
 
-      .divider-vertical.pull-left
+              %ul.dropdown-menu{role: "menu", aria: {labelledby: "locale-switcher"}}
+                %li.active
+                  %a{href: "#"}
+                    %i.icon-flag-usa
+                    English
+                %li
+                  %a{href: "#"}
+                    %i.icon-flag-rus
+                    Русский
+        .navbar-cell
+          .divider-vertical
+        .navbar-cell{style:"width:100%"}
+          .nav-cart-block
+            %i.icon-cart
+            = link_to "Select ad and traffic sources", "#"
+        .navbar-cell
+          .divider-vertical
+        .navbar-cell
+          %form.navbar-search.form-search
+            .input-append
+              %input.search-query.span2{type:"text", placeholder:"Search"}
+              %button.btn{type:"submit"}
+                %i.icon-search
+        .navbar-cell
+          .divider-vertical
+        .navbar-cell
+          / AddThis Button BEGIN
+          %div.addthis_toolbox.addthis_floating_style.addthis_counter_style{style: "background: transparent; position: relative; margin: 0; padding: 6px 0 0 0"}
+            %a.addthis_counter
+          :javascript
+            var addthis_config = {"data_track_addressbar":true};
 
-      .nav-cart-block.pull-left
-        %i.icon-cart
-        = link_to "Select ad and traffic sources", "#"
-
-      .divider-vertical.pull-left
-
-      %form.navbar-search.pull-left.form-search
-        .input-append
-          %input.search-query.span2{type:"text", placeholder:"Search"}
-          %button.btn{type:"submit"}
-            %i.icon-search
-
-      .divider-vertical.pull-left
-
-      .pull-left
-        / AddThis Button BEGIN
-        %div.addthis_toolbox.addthis_floating_style.addthis_counter_style{style: "background: transparent; position: relative; margin: 0; padding: 6px 0 0 0"}
-          %a.addthis_counter
-        :javascript
-          var addthis_config = {"data_track_addressbar":true};
-
-        %script{type: "text/javascript", src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523db23b09da1790"}
-        / AddThis Button END
+          %script{type: "text/javascript", src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523db23b09da1790"}
+          / AddThis Button END
