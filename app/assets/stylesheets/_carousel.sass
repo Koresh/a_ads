@@ -1,0 +1,120 @@
+@import "carousel/*.png"
++all-icons-sprites
+
+$icons-carousel: "aad", "basket-globe-90", "bitcoin-speedo", "doc-speaker", "ads-example", "bitcoin-chips-half", "board-graph-120", "equal", "basket-docs", "bitcoin-chips", "board-stats", "globe-steps", "basket-globe-120", "bitcoin-globe", "doc-person", "plus", "board-graph-90"
+
+@each $icon in $icons-carousel
+  .icon-carousel-#{$icon}, 
+    +carousel-sprite(#{$icon})
+    height: carousel-sprite-height(#{$icon})
+    width: carousel-sprite-width(#{$icon})
+
+// type
+.carousel
+  font-size: 16px
+  color: $white
+  line-height: 20px
+  height: $welcome-banner-height - 120px
+  margin: 0
+  .carousel-inner
+    .row
+      margin: 
+        left: 0
+  h2
+    font-weight: normal
+    font-size: 22px
+    line-height: 26px
+    margin:
+      top: 5px
+      bottom: 10px
+  p
+    font-size: 16px
+    margin:
+      top: 10px
+      bottom: 30px
+  small
+    font-size: 12px
+    font-weight: normal
+    text-shadow: none
+    text-transform: none
+  ul
+    &.carousel-list
+      margin:
+        left: 0
+      list-style: none
+      li
+        position: relative
+        font-size: 18px
+        padding:
+          left: 40px
+        &:after
+          position: absolute
+          content: ""
+          width: 15px
+          height: 15px
+          border-radius: 50%
+          background-color: #ffd800
+          box-shadow: 2px 4px 7px 0px rgba( 0, 0, 0, 0.1 )
+          position: absolute
+          left: 10px
+          top: 2px
+        &+li
+          margin:
+            top: 20px
+    &.carousel-features
+      list-style: none
+      overflow: hidden
+      margin: 0
+      li
+        float: left
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+        text-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.5 )
+        &+li
+          margin:
+            left: 17px
+        p
+          font-size: 14px
+          margin:
+            top: 10px
+            bottom: 0
+  .icon-carousel-plus,
+  .icon-carousel-equal
+    margin:
+      top: 30px
+    border-radius: 50%
+    box-shadow: inset 0px 0px 2px 0px rgba( 20, 196, 236, 0.9 ), 0px 0px 3px 0px rgba( 20, 196, 236, 0.9 ), 0px 0px 20px 0px rgba( 255, 255, 255, 0.9 ), 0px 0px 30px 0px rgba( 20, 196, 236, 0.9 )
+  .features-120
+    .icon-carousel-plus,
+    .icon-carousel-equal
+      margin:
+        top: 45px
+
+.carousel-indicators
+  top: auto
+  bottom: -10px
+  left: 40%
+
+  li
+    width: 20px
+    height: 20px
+    margin:
+      left: 8px
+    +border-radius(999px)
+    background:
+      color: $white
+    position: relative
+
+    &.active
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        width: 14px
+        height: 14px
+        top: 3px 
+        left: 3px
+        +border-radius(999px)
+        +background-image(linear-gradient(#00b5fc, #004a7d))
+        +box-shadow(inset 0px 2px 0 0 #349fd6)
