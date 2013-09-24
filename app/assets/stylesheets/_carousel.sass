@@ -1,13 +1,13 @@
-@import "carousel/*.png"
-+all-icons-sprites
+@import "carousel-icon/*.png"
++all-carousel-icon-sprites
 
 $icons-carousel: "aad", "basket-globe-90", "bitcoin-speedo", "doc-speaker", "ads-example", "bitcoin-chips-half", "board-graph-120", "equal", "basket-docs", "bitcoin-chips", "board-stats", "globe-steps", "basket-globe-120", "bitcoin-globe", "doc-person", "plus", "board-graph-90"
 
 @each $icon in $icons-carousel
-  .icon-carousel-#{$icon}, 
-    +carousel-sprite(#{$icon})
-    height: carousel-sprite-height(#{$icon})
-    width: carousel-sprite-width(#{$icon})
+  .carousel-icon-#{$icon}, 
+    +carousel-icon-sprite(#{$icon})
+    height: carousel-icon-sprite-height(#{$icon})
+    width: carousel-icon-sprite-width(#{$icon})
 
 // type
 .carousel

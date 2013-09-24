@@ -24,6 +24,7 @@ gem 'html2haml'
 
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
