@@ -1,0 +1,221 @@
+.ad-alert
+  .container
+    %form
+      .row-fluid
+        .span4
+          %p
+            %strong
+              Welcome to Anonymous Ads - one of the largest bitcoin advertising networks. We don't collect personal data and don't spy on users. 
+          %p
+            %strong
+              Just try it out!
+
+        .span7
+          %ul.ad-alert-list
+            %li
+              .ad-alert-circle
+                %i.sprite-icon1
+              .text-center
+                %strong
+                  Your Ad
+            %li
+              %i.sprite-icon5
+            %li
+              .ad-alert-circle
+                %i.sprite-icon2
+              .text-center
+                %strong
+                  Daily 
+                  %br
+                  Budget
+            %li
+              %i.sprite-icon6
+            %li
+              .ad-alert-circle
+                %i.sprite-icon3
+              .text-center
+                %strong
+                  Advertising
+                  %br
+                  Campaign
+            %li
+              %i.sprite-icon7
+            %li
+              .ad-alert-circle
+                %i.sprite-icon4
+              .text-center
+                %strong
+                  Adjust
+                  %br
+                  targeting
+        
+        .span1
+          %a.ad-alert-close-link{href: "#"}
+            Close
+            %i.icon-remove-sign
+
+
+.container
+  %form.form-horizontal.form-adwertasing-create
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title 1. Create ad
+          %p.dscr.muted.font-size-15
+            It takes 20 seconds to create an advertising campaign, no registration needed! Please refrain from advertising bad sites.
+          
+          .control-group
+            %label.control-label{for: "form-title"} Title
+            .controls
+              .row-fluid
+                .span11
+                  %input#form-title{type: "text", placeholder: "50 characters max"}
+          .control-group
+            %label.control-label{for: "form-link"} Link
+            .controls
+              .row-fluid
+                .span11
+                  %input#form-link{type: "text", placeholder: "www.example.com"}
+          .control-group
+            %label.control-label{for: "form-text"} Text
+            .controls
+              .row-fluid
+                .span11
+                  %input#form-text{type: "text", placeholder: "50 characters max"}
+          .control-group
+            %label.control-label{for: "form-language"} Language
+            .controls
+              .row-fluid
+                .span11
+                  %select#form-language
+                    %option English
+                    %option English
+                    %option English
+                    %option English
+                    %option English
+
+          .control-group
+            %label.control-label{for: "form-file"} Banners
+            .controls
+              .row-fluid
+                .span11
+                  %label.input-file{for: "form-file"}
+                    %button.btn{}
+                      Choose files
+                      %i.icon-plus
+                    %input#form-file{type: "file", placeholder: "50 characters max"}
+                .span1
+                  %a#input-file-toltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                    %i.icon-question-sign
+
+          .control-group
+            %label.control-label Your files:
+            .controls
+              .row-fluid
+                .span11
+                  %ul.unstyled
+                    %li
+                      %i.icon-ok-sign.text-success
+                      %strong 180x90  
+                      %a{href: "#"} 180x90px-banner-aads-2014.png
+                      %i.icon-remove.text-error
+                    %li
+                      %i.icon-exclamation-sign.text-error
+                      (invalid size)
+                      %span 320x400px-banner-aads-2014.png  
+                    %li
+                      %i.icon-ok-sign.text-success
+                      %strong 900x90
+                      %a{href: "#"} 900x90px-banner-aads-2014.png
+                      %i.icon-remove.text-error
+      
+      .span4
+        .help-block
+          .help-block-adwertasing
+            %a.underline.text-bold{href: "#"} Grusha
+            %br
+            %span Публикуй во все соцсети одновременно
+            %br
+            %small grushahq.com
+
+            .icon.sprite-icon8
+
+          %a.underline{href: "#"} Preview in all sizes
+
+
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title 2. Set daily budget
+          %p.dscr.muted.font-size-15
+            Please adjust amount of money you want to spend daily. More targeting parameters will be available when your campaign is created.
+
+          .row-fluid
+            .span4.offset4
+              .form-adwertasing-count
+                .row-fluid
+                  .span4.offset2
+                    %input.input-mini{type: "text", placeholder: "Email", value: "0.1"}
+                  .span6
+                    %label.checkbox
+                      %i.icon.sprite-icon9
+                      %span.font-size-15.muted ($50)
+      
+          .row-fluid
+            .span1
+              %span.muted 0,01B
+            .span10
+              %input.js-slider{type: "text", value: ""}
+            .span1
+              %span.muted 0,5B
+
+          %p.muted.text-center.margin-bottom-30
+            CPM: 0.00081708 Ƀ ($0.42), CPC: 0.00001966 Ƀ ($0.01)
+            %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+              %i.icon-question-sign
+
+          %hr.margin-bottom-30
+          .margin-bottom-10
+            .row-fluid
+              .span4.offset4
+                %button.btn.btn-success.btn-large.btn-block.btn-xlarge{type: "submit"} CREATE CAMPAING!
+              .span3.offset1
+                .form-adwertasing-code
+                  %label 
+                    Coupon code
+                    %i.icon-ok-sign.text-success
+                  %input{type: "text", placeholder: "Code"}
+
+      .span4
+        .help-block.help-block-2
+          %ul.help-block-count.unstyled
+            %li
+              %strong
+                \~2 539
+              %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                %i.icon-question-sign
+              .font-size-14
+                ad units
+            %li
+              %strong
+                \~41 504
+              %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                %i.icon-question-sign
+              .font-size-14
+                impressions
+            %li
+              %strong
+                \~1 725 
+              %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                %i.icon-question-sign
+              .font-size-14
+                clicks per day
+
+          %p.muted.font-size-13
+            Discount for participants of Incide Bitcoins Hong Kong for 2 months.
+
+
+
+
+
+

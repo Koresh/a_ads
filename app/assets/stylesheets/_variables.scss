@@ -94,7 +94,7 @@ $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);
 $btnInfoBackground:                 #5bc0de;
 $btnInfoBackgroundHighlight:        #2f96b4;
 
-$btnSuccessBackground:              #62c462;
+$btnSuccessBackground:              #7ece3d;
 $btnSuccessBackgroundHighlight:     #51a351;
 
 $btnWarningBackground:              lighten($orange, 15%);
@@ -234,11 +234,11 @@ $warningText:             #c09853;
 $warningBackground:       #fcf8e3;
 $warningBorder:           darken(adjust-hue($warningBackground, -10), 3%);
 
-$errorText:               #b94a48;
+$errorText:               #ed564e;
 $errorBackground:         #f2dede;
 $errorBorder:             darken(adjust-hue($errorBackground, -10), 3%);
 
-$successText:             #468847;
+$successText:             #7ece3d;
 $successBackground:       #dff0d8;
 $successBorder:           darken(adjust-hue($successBackground, -10), 5%);
 
@@ -250,7 +250,7 @@ $infoBorder:              darken(adjust-hue($infoBackground, -10), 7%);
 // Tooltips and popovers
 // -------------------------
 $tooltipColor:            #fff;
-$tooltipBackground:       #000;
+$tooltipBackground:       #0088cc;
 $tooltipArrowWidth:       5px;
 $tooltipArrowColor:       $tooltipBackground;
 

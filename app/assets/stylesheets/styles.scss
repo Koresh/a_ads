@@ -6,6 +6,8 @@
 
 @import "compass";
 
+@import "bootstrap-slider";
+
 body{
   padding-top: $navbarHeight;
 }
@@ -28,3 +30,8 @@ body{
 @import "carousel";
 
 @import "footer";
+
+@import "alert";
+@import "form_create";
+
+@import "bootstrap_slider";

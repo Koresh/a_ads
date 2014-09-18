@@ -24,4 +24,5 @@
 //= require bootstrap/bootstrap-modal
 //= require bootstrap/bootstrap-tooltip
 //= require bootstrap/bootstrap-popover
+//= require bootstrap-slider
 //= require welcome
