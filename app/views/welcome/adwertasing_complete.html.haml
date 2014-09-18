@@ -1,0 +1,100 @@
+.container
+  %form.form-horizontal.form-adwertasing-create
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title
+            %i.fa.fa-check.text-success
+            Your advertising campaign has been created!
+
+          %p.font-size-16.text-center
+            %strong Please deposit any amount to initiate ad moderation process.
+
+          %hr.margin-bottom-30
+          
+          .margin-bottom-30
+            .row-fluid
+              .span9
+                .control-group.margin-bottom-20
+                  %label.control-label{for: "form-address"} Deposit Address
+                  .controls
+                    .margin-bottom-10
+                      %input#form-address{type: "text", placeholder: "50 characters max", value: "1N2dJjAr4VBaTVexMtDtPzYDjuZvtuAruT", readonly: ""}
+                    %a.btn.btn-light{hfer: "#"}
+                      %i.fa.fa-copy
+                      Copy this!
+                %p.muted
+                  By sending money to this bitcoin address you accept our 
+                  %a.underline{href: "#"} Terms of Service
+              .span3
+                .text-right
+                  %img{src: "http://placehold.it/120x120"}
+
+          %section.form-adwertasing-section-orange
+            %h3 Access Data (it will not be shown again!) 
+            .margin-bottom-10
+              %pre
+                Кампания: #16
+                %br<>
+                Ссылка: http://a-ads.com/campaigns/16
+                %br<>
+                Пароль:
+                %br<>
+                X9JtvfonY7FSPxDhQZmnH5uVP210o5S9iQuS0GTqiMbF3wE
+
+            %a.btn.btn-light{hfer: "#"}
+              %i.fa.fa-copy
+              Copy this!
+            %a.btn.btn-light{hfer: "#"}
+              %i.fa.fa-download
+              Download as TXT
+
+          %h3 Refund and notifications
+
+          .control-group.large
+            %label.control-label{for: "form-title"} Bitcoin address for refunds (optional) 
+            .controls
+              %input#form-title{type: "text"}
+
+          .control-group.large
+            %label.control-label{for: "form-title"} Email address for notifications (optional)
+            .controls
+              %input#form-title{type: "text"}
+
+          .row-fluid
+            .span6.offset6.text-right
+              you can also
+              %a.btn.btn-warning.btn-mini{href: "#"}
+                %i.fa.fa-rss-square
+                Subscribe to campaign events
+
+          %hr
+          .row
+            .span4.offset5
+              .control-group.small
+                .controls
+                  %label.checkbox
+                    %input{type: "checkbox"} I saved access data
+            .span4.offset4
+              %button.btn.btn-success.btn-large.btn-block.btn-xlarge{type: "submit", disabled: "disabled"} CAMPAING DETAILS
+              
+
+
+      .span4
+        .margin-bottom-100.margin-top-100
+          %a.underline{href: "#"}
+            How to obtain bitcoins
+            %i.fa.fa-question-circle.js-tooltip{title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          %i.sprite-icon10
+
+        %p.muted.margin-bottom-100.font-size-13
+          It may take minutes to hours for your deposit to get confirmed and processed.
+
+        %p.muted.margin-bottom-200.font-size-13
+          This password is not saved in our database and will not be shown again.
+
+        %p.muted.font-size-13
+          Email or bitcoin addresses are optional. They can be used to recover the access to your campaign if you lose your password.

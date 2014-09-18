@@ -24,7 +24,7 @@ gem 'html2haml'
 
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'bootstrap-slider-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

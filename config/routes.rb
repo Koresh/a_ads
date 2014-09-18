@@ -5,7 +5,9 @@ AAds::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get "adwerasing_create" => "welcome#adwerasing_create"
+  get "adwertasing_create" => "welcome#adwertasing_create"
+
+  get "adwertasing_complete" => "welcome#adwertasing_complete"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
