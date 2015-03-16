@@ -9,6 +9,8 @@ AAds::Application.routes.draw do
 
   get "adwertasing_complete" => "welcome#adwertasing_complete"
 
+  get "ad_unit" => "welcome#ad_unit"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

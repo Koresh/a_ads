@@ -1,0 +1,284 @@
+.ad-alert
+  .container{style: "padding-bottom: 14px;"}
+    %form
+      .row-fluid
+        .span4
+          %p
+            %strong
+              Welcome to Anonymous Ads - the bitcoin advertising network that respects your privacy and doesn't collect personal data. Become our publisher in 30 seconds, no registration needed!
+        .span7
+          %ul.ad-alert-list
+            %li
+              .ad-alert-circle
+                %i.sprite-icon12
+              .text-center
+                %strong
+                  Your income
+            %li
+              %i.sprite-icon11
+            %li
+              .ad-alert-circle
+                %i.sprite-icon13
+              .text-center
+                %strong
+                  Unique traffic
+            %li
+              %i.sprite-icon5
+            %li
+              .ad-alert-circle
+                %i.sprite-icon14
+              .text-center
+                %strong
+                  Direct sales
+            %li
+              %i.sprite-icon5
+            %li
+              .ad-alert-circle
+                %i.sprite-icon15
+              .text-center{style: "position: relative"}
+                %strong{style: "position: absolute; left: 50%; width: 200px;"}
+                  .inner{style: "position: relative; right: 50%;"}
+                    50% of fees from
+                    %br 
+                    referred advertisers
+        .span1
+          %a.ad-alert-close-link{href: "#"}
+            Close
+            %i.fa.fa-times-circle
+
+
+.container{id: "ad-unit-form"}
+  %form.form-horizontal.form-adwertasing-create
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title 1. Select ad unit type
+          .btn-group.btns-big
+            .btn.btn-large
+              site
+            .btn.btn-large.active
+              affiliate link
+            .btn.btn-large
+              other
+          
+          .switch-group
+            .item.active
+              .dscr.muted.font-size-15
+                Your ad unit has to be available at the specified URL and start generating globally unique traffic from same domain name. 
+                After that our moderators will set categories for it in 24 hours
+
+              .control-group
+                %label.control-label
+                  Size
+                .controls
+                  %select.small-select
+                    %option
+                      180x90
+
+              .control-group
+                %label.control-label{for: "form-text"} Link
+                .controls
+                  .row-fluid
+                    %input#form-text{type: "text"}
+
+            .item
+              .dscr.muted.font-size-15
+                Your ad unit has to be available at the specified URL and start generating globally unique traffic from same domain name. 
+                After that our moderators will set categories for it in 24 hours
+
+              .control-group
+                %label.control-label
+                  Size
+                .controls
+                  %select.small-select
+                    %option
+                      180x90
+
+              .control-group
+                %label.control-label{for: "form-text"} Link
+                .controls
+                  .row-fluid
+                    %input#form-text{type: "text"}
+
+
+
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title 2. Set filters
+          %p.dscr.muted.font-size-15
+            Please select which kind of content is allowed to be shown on your ad unit and see how it affects your earnings.
+          %hr.margin-bottom-30
+
+          .check-box-group
+            .inner
+              %label.checkbox
+                %input{type: "checkbox"}
+                %span.font-size-15
+                  %strong
+                    Gambling
+                \- high risk investments
+
+          .check-box-group
+            .inner
+              %label.checkbox
+                %input{type: "checkbox"}
+                %span.font-size-15
+                  %strong
+                    NSFW
+                  \- erotic or shocking content
+
+          .check-box-group
+            .inner
+              %label.checkbox
+                %input{type: "checkbox"}
+                %span.font-size-15
+                  %strong
+                    Shady
+                  \- controversial or untrustworthy services
+
+      .span4
+        .help-block.help-block-2
+          %ul.help-block-count.unstyled
+            %li
+              %strong
+                %span{style: "vertical-align: middle;"}
+                  \~0.001
+                %i.icon.sprite-icon9{style: "vertical-align: middle;"}
+                %span.font-size-15{style: "vertical-align: middle;"}
+                  (3$) per mille
+
+              %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                %i.fa.fa-question-circle
+
+            %li
+              %strong
+                %span{style: "vertical-align: middle;"}
+                  \~0.002 
+                %i.icon.sprite-icon9{style: "vertical-align: middle;"}
+                %span.font-size-15{style: "vertical-align: middle;"}
+                  (6$) per mille
+              %a.form-toltip.js-tooltip{href: "#", title: "We support PNG, JPG or GIF of the following sizes: 120x60, 120x90, 120x240, 120x600, 125x125, 160x90, 160x600, 180x90, 180x150, 200x90, 200x200, 234x60, 240x400, 250x250, 300x250, 320x50, 336x280, 468x15, 469x60, 728x15, 728x90, 990x90"}
+                %i.fa.fa-question-circle
+          %p.muted.font-size-13
+            Actual numbers depend on quality and category of particular ad unit.
+
+
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title 3. Set withdraw parameters
+          .btn-group.btns-big.margin-bottom-40
+            .btn.btn-large
+              to Bitcoin address
+            .btn.btn-large.active
+              to a-ads Campaigns
+
+          .switch-group
+
+            .item.margin-bottom-40.active
+              %p.muted.font-size-15.margin-bottom-40
+                Earnings will be sent to the specified advertising campaign on a hourly basis.
+                %br<>No minimum threshold
+              .control-group.row-fluid
+                %label.control-label.span4{for: "form-text", style: "width: 180px"} B-adress
+                .controls{style: "margin-left: 200px"}
+                  .row-fluid
+                    %input#form-text{type: "text"}
+            
+              .control-group.row-fluid
+                %label.control-label.span4{for: "form-text", style: "width: 180px"} Withdrawal threshold
+                .controls{style: "margin-left: 200px"}
+                  .row-fluid
+                    %input#form-text{type: "text"}
+
+            .item.margin-bottom-40
+              %p.muted.font-size-15.margin-bottom-40
+                Earnings will be sent to the specified advertising campaign on a hourly basis.
+                %br<>No minimum threshold
+              .control-group.row-fluid
+                %label.control-label.span4{for: "form-text", style: "width: 180px"} Campaign
+                .controls{style: "margin-left: 200px"}
+                  .row-fluid
+                    %input#form-text{type: "text"}
+
+          %hr.margin-bottom-30
+          .margin-bottom-10
+            .row-fluid
+              .span4.offset4
+                %button.btn.btn-success.btn-large.btn-block.btn-xlarge{type: "submit"} CREATE AD UNIT!
+
+
+    .row-fluid
+      .span8
+        .well.well-large
+          %h2.form-title
+            %i.fa.fa-check.text-success
+            Your ad unit has been created!
+          %hr.margin-bottom-30
+
+          %h3
+            Please embed this HTML code into your site
+          %pre{style: "background: #fff;"}
+            Кампания: #16
+            %br<>
+            Ссылка: http://a-ads.com/campaigns/16 
+            %br<>
+            Пароль: X9hjwdqjkwdldqwiodwqjiojdwklqwjdklqwjdkljdkwl
+
+          %p.font-size-15
+            Use this affiliate link to attract advertisers and get 50% of fees we collect from them: https://a-ads.com?partner=11232
+          %p.muted
+            By sending money to this bitcoin address you accept our 
+            %a.underline{href: "#"} Terms of Service
+          %section.form-adwertasing-section-orange
+            %h3
+              Access Data (it will not be shown again!)
+
+            .margin-bottom-10
+              %pre
+                Кампания: #16
+                %br<>
+                Ссылка: http://a-ads.com/campaigns/16
+                %br<>
+                Пароль:
+                %br<>
+                X9JtvfonY7FSPxDhQZmnH5uVP210o5S9iQuS0GTqiMbF3wE
+
+              %a.btn.btn-light{hfer: "#"}
+                %i.fa.fa-copy
+                Copy this!
+              %a.btn.btn-light{hfer: "#"}
+                %i.fa.fa-download
+                Download as TXT
+
+          %h3
+            Access Data (it will not be shown again!)
+
+          .control-group.large
+            %label.control-label{for: "form-title"} Email address for notifications (optional)
+            .controls
+              %input#form-title{type: "text"}
+
+          .row-fluid
+            .span6.offset6.text-right
+              you can also
+              %a.btn.btn-warning.btn-mini{href: "#"}
+                %i.fa.fa-rss-square
+                Subscribe to campaign events
+
+          %hr
+          .row
+            .span4.offset5
+              .control-group.small
+                .controls
+                  %label.checkbox
+                    %input{type: "checkbox"} I saved access data
+            .span4.offset4
+              %button.btn.btn-success.btn-large.btn-block.btn-xlarge{type: "submit", disabled: "disabled"} CAMPAING DETAILS
+      .span4
+        %div{style: "margin-top: 124px"}
+          %p.muted.margin-bottom-40
+            Ads will appear after you embed your ad unit and start generating unique impressions, it may take few hours
+          %p.muted{style: "margin-top: 220px"}
+            This password is not saved in our database and will not be shown again

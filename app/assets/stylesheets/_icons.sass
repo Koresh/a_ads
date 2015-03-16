@@ -1,7 +1,7 @@
 @import "sprite/*.png"
 +all-sprite-sprites
 
-$sprite: "flag-rus", "flag-usa", "arrow-rise", "arrow-fall", "icon1", "icon2", "icon3", "icon4", "icon5", "icon6", "icon7", "icon8", "icon9", "icon10"
+$sprite: "flag-rus", "flag-usa", "arrow-rise", "arrow-fall", "icon1", "icon2", "icon3", "icon4", "icon5", "icon6", "icon7", "icon8", "icon9", "icon10", "icon11", "icon12", "icon13", "icon14", "icon15"
 
 [class^="sprite-"],
 [class*=" sprite-"]
@@ -15,7 +15,7 @@ $sprite: "flag-rus", "flag-usa", "arrow-rise", "arrow-fall", "icon1", "icon2", "
   margin-top: 1px
 
 @each $icon in $sprite
-  .sprite-#{$icon}, 
+  .sprite-#{$icon},
   .dropdown-menu > .active > a > .sprite-#{$icon},
   .dropdown-menu > .active > a:hover > .sprite-#{$icon},
   .dropdown-menu > li > a > .sprite-#{$icon},
