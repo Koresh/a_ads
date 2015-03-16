@@ -5,9 +5,9 @@ AAds::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get "adwertasing_create" => "welcome#adwertasing_create"
+  get "advertising_create" => "welcome#advertising_create"
 
-  get "adwertasing_complete" => "welcome#adwertasing_complete"
+  get "advertising_complete" => "welcome#advertising_complete"
 
   get "ad_unit" => "welcome#ad_unit"
 
